@@ -1,0 +1,69 @@
+void main() {
+  exercicio9();
+}
+
+void exercicio1(){
+  print('Hello World!');
+}
+
+void exercicio2(){
+  String carro = "Fusca";
+  int ano = 1979;
+  double preco = 19.500;
+  bool gasolinaAlcool = false;
+  
+  // Concatenação: não indicado, dá erro na versão de navegador
+  // print('| Carro: ' + carro + " | Ano: " + ano + " | Preço: " + preco + " | Gasolina e Alcool: " + gasolinaAlcool);
+}
+
+void exercicio3(){
+  String filme = "Moisés: O Principe do Egito";
+  filme = "Davi: Nasce um rei";
+  print(filme);
+}
+
+void exercicio4(){
+  // Declara a variável filme com o valor "Moisés: O Principe do Egito"
+  String filme = "Moisés: O Principe do Egito";
+  
+  // Muda o valor da variável filme para "Davi: Nasce um rei"
+  filme = "Davi: Nasce um rei";
+  
+  // Imprime o valor da variável filme no console
+  print(filme);
+}
+
+void exercicio5() {
+  String nome = "Miguel";
+  int idade = 17;
+  print('Olá, $nome! Você tem $idade anos de idade.');
+}
+
+void exercicio6() {
+  int v1 = 17, v2 = 3, resultado;
+  resultado = v1 + v2;
+  print("O resultado de v1 + v2 é: $resultado.");
+}
+
+void exercicio7() {
+  int v1 = 3, v2 = 12;
+  print("O valor da soma de v1 + v2 é = ${v1 + v2}.");
+}
+
+void exercicio8() {
+  int v1 = 12, v2 = 3, soma, sub, mult, div, mod;
+  soma = v1 + v2;
+  sub = v1 - v2;
+  mult = v1 * v2;
+  div = (v1 / v2).toInt();
+  mod = v1 % v2;
+  print("| Soma: $soma | Subtração: $sub | Multiplicação: $mult | Divisão: $div | Mod: $mod |");
+}
+
+void exercicio9() {
+  String produto = "Laptop";
+  double precoUnitario = 1200.80, totalPagar;
+  int quantidadeComprada = 3;
+  totalPagar = precoUnitario * quantidadeComprada;
+  print("| Produto: $produto | Preço Unitário: $precoUnitario | Quantidade Comprada: $quantidadeComprada| Total a Pagar: $totalPagar |");
+}
