@@ -1,5 +1,5 @@
 void main() {
-  exercicio9();
+  exercicio13();
 }
 
 void exercicio1(){
@@ -66,4 +66,62 @@ void exercicio9() {
   int quantidadeComprada = 3;
   totalPagar = precoUnitario * quantidadeComprada;
   print("| Produto: $produto | Preço Unitário: $precoUnitario | Quantidade Comprada: $quantidadeComprada| Total a Pagar: $totalPagar |");
+}
+
+void exercicio10(){
+  int nota1 = 10;
+  int nota2 = 6;
+  int nota3 = 7;
+  print('| Nota 1: $nota1 | Nota 2: $nota2 | nota 3: $nota3 | Média: ${((nota1 + nota2 + nota3)/3).toInt()} |');
+}
+
+void exercicio11() {
+  int v1 = 10, v2 = 3, aux;
+  aux = v1;
+  v1 = v2;
+  v2 = aux;
+  print('Variável 1: $v1 | Variável 2: $v2 |');
+}
+
+void exercicio12() {
+  int v1 = 10, v2 = 3;
+  v1 = v1 + v2;
+  v2 = v1 - v2;
+  v1 = v1 - v2;
+  print('V1: $v1, V2: $v2');
+}
+
+void exercicio13() {
+  int valor = 1110, duzentos, cem, cinquenta, vinte, dez, cinco, dois, totalNotas;
+
+  duzentos = (valor/200).toInt();
+  valor = valor % 200;
+  cem = (valor/100).toInt();
+  valor = valor % 100;
+  cinquenta = (valor/50).toInt();
+  valor = valor % 50;
+  vinte = (valor/20).toInt();
+  valor = valor % 20;
+  dez = (valor/10).toInt();
+  valor = valor % 10;
+  cinco = (valor/5).toInt();
+  valor = valor % 5;
+  dois = (valor/2).toInt();
+  valor = valor % 2;
+
+  totalNotas = duzentos + cem + cinquenta + vinte + dez + cinco + dois;
+
+  print('+==========================+');
+  print('| NOTAS:                   |');
+  print('+==========================+');
+  print('| R\$ 200: $duzentos                |');
+  print('| R\$ 100: $cem                |');
+  print('| R\$ 50: $cinquenta                 |');
+  print('| R\$ 20: $vinte                 |');
+  print('| R\$ 10: $dez                 |');
+  print('| R\$ 5: $cinco                  |');
+  print('| R\$ 2: $dois                  |');
+  print('+==========================+');
+  print('| Nº de Notas: $totalNotas           |');
+  print('+==========================+');
 }
